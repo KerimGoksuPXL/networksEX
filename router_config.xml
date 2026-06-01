@@ -1,9 +1,7 @@
+
 <config>
   <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
-    <!-- Hostname -->
     <hostname>AUTOMATED-ROUTER</hostname>
-    
-    <!-- Interface GigabitEthernet 1 -->
     <interface>
       <GigabitEthernet>
         <name>1</name>
@@ -16,12 +14,7 @@
             </primary>
           </address>
         </ip>
-        <no-shutdown/>
       </GigabitEthernet>
-    </interface>
-    
-    <!-- Interface GigabitEthernet 2 -->
-    <interface>
       <GigabitEthernet>
         <name>2</name>
         <description>LAN-Interface-for-OSPF</description>
@@ -33,14 +26,12 @@
             </primary>
           </address>
         </ip>
-        <no-shutdown/>
       </GigabitEthernet>
     </interface>
-    
-    <!-- OSPF Routing -->
     <router>
       <ospf>
         <id>1</id>
+        <router-id>1.1.1.1</router-id>
         <network>
           <ip>192.168.56.0</ip>
           <wildcard>0.0.0.255</wildcard>
@@ -51,7 +42,6 @@
           <wildcard>0.0.0.255</wildcard>
           <area>0</area>
         </network>
-        <router-id>1.1.1.1</router-id>
       </ospf>
     </router>
   </native>
