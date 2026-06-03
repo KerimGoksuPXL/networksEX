@@ -1,0 +1,5 @@
+# vars.yml
+hostname: "AUTOMATED-ROUTER"
+interface_name: "1"
+interface_desc: "WAN-Interface"
+ospf_router_id: "10.10.10.1"
