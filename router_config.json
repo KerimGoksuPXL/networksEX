@@ -1,3 +1,4 @@
+
 {
   "Cisco-IOS-XE-native:native": {
     "hostname": "AUTOMATED-ROUTER",
@@ -5,13 +6,24 @@
       "GigabitEthernet": [
         {
           "name": "1",
-          "ip": { "address": { "primary": { "address": "192.168.56.10", "mask": "255.255.255.0" } } }
+          "description": "WAN-Interface",
+          "ip": {
+            "address": {
+              "primary": {
+                "address": "192.168.56.10",
+                "mask": "255.255.255.0"
+              }
+            }
+          }
         }
       ]
     },
     "router": {
-      "ospf": [
-        { "id": "1" }
+      "Cisco-IOS-XE-ospf:ospf": [
+        {
+          "id": "1",
+          "router-id": "10.10.10.1"
+        }
       ]
     }
   }
