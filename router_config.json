@@ -17,14 +17,6 @@
           }
         }
       ]
-    },
-    "router": {
-      "Cisco-IOS-XE-ospf:ospf": [
-        {
-          "id": "1",
-          "router-id": "10.10.10.1"
-        }
-      ]
     }
   }
 }
