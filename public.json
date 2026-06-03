@@ -1,0 +1,5 @@
+{
+  "hostname": "AUTOMATED-ROUTER",
+  "interface_desc": "WAN-Interface",
+  "ospf_router_id": "10.10.10.1"
+}
